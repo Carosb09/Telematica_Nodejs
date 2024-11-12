@@ -12,7 +12,7 @@ function App() {
 
     }).then(response => response.json()
       .then(data => setProducts(data))
-      .catch(err => console.log(err))
+      .catch(err => console.log(err)) 
     )
       .catch(errorResponse => console.log(errorResponse))
   }, [])
@@ -32,6 +32,6 @@ function App() {
       }
     </>
   );
-}
+  }
 
 export default App;
